@@ -1,0 +1,24 @@
+@font-face {
+	font-family: fa;
+	src: url();
+}
+
+:root {
+	--primary-color: #000;
+	--secondary-color: #fff;
+	--accent-color: #f5f5ff;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 3rem;
+}
