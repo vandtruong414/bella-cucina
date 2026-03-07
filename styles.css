@@ -1,6 +1,7 @@
 @font-face {
-	font-family: fa;
-	src: url();
+	font-family: 'Nunito';
+	src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700&display=swap')
+		format('woff2');
 }
 
 :root {
@@ -14,6 +15,8 @@
 }
 
 body {
+	height: 100vh;
+	font-family: 'Nunito', sans-serif;
 }
 
 nav {
