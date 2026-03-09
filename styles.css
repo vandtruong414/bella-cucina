@@ -1,13 +1,19 @@
-@font-face {
+/* @font-face {
 	font-family: 'Nunito';
 	src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700&display=swap')
 		format('woff2');
-}
+} */
+
+/* @font-face {
+	font-family: 'Mrs Saint Delafield';
+	src: url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield')
+		format('woff2');
+} */
 
 :root {
-	--primary-color: #000;
-	--secondary-color: #fff;
-	--accent-color: #f5f5ff;
+	--primary-color: #781c1c;
+	--secondary-color: #fff8f0;
+	--accent-color: #;
 }
 
 * {
@@ -15,13 +21,55 @@
 }
 
 body {
-	height: 100vh;
+	/* height: 100vh; */
 	font-family: 'Nunito', sans-serif;
+	margin: 0;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 30% 70%;
 	align-items: center;
-	padding: 1rem 3rem;
+	background: var(--secondary-color);
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 15px 30px;
+
+	.nav-logo {
+		font-family: 'Mrs Saint Delafield', cursive;
+		font-weight: 400;
+		font-size: 4.5rem;
+		color: var(--primary-color);
+		font-weight: 700;
+	}
+
+	.nav-links {
+		display: flex;
+		justify-content: end;
+		column-gap: 50px;
+		align-items: center;
+		list-style: none;
+		text-transform: uppercase;
+
+		a {
+			text-decoration: none;
+			color: var(--primary-color);
+		}
+	}
+}
+
+section {
+	height: 100vh;
+}
+
+#hero {
+	background-image: url(./assets/images/home-4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
